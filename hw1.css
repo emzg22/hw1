@@ -100,10 +100,14 @@ img {
     float: left;
 }
 /*adding padding to the tables*/
-.secondTable, .thirdTable, .fourthTable, .fifthTable{
-    padding-left: 15%;
-    padding-right: 15%;
+.secondTable, .thirdTable, .fourthTable{
+    padding-left: 30%;
+    padding-right: 30%;
 }
+.fifthTable {
+    margin-left: auto;
+    margin-right: auto;
+  }
 /*aligning the sumbit button to the left*/
 input[name="submit"]{
 text-align: left;
