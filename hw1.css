@@ -15,6 +15,8 @@ header {
     background-color: rgb(255, 244, 240);
 }
 body {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     background: rgb(195,193,194);
     font-family: "Bodoni Moda";
@@ -50,8 +52,10 @@ a:link {
   /*footer code*/
 footer {
     text-align: center;
+    vertical-align: bottom;
     font-family: "Bodoni Moda";
     width: 100%;
+    margin-top: auto;
     font-weight: lighter;
     background-color: rgb(255, 244, 240);
 }
@@ -101,8 +105,8 @@ img {
 }
 /*adding padding to the tables*/
 .secondTable, .thirdTable, .fourthTable{
-    padding-left: 30%;
-    padding-right: 30%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 .fifthTable {
     margin-left: auto;
