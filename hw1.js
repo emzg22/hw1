@@ -1,7 +1,7 @@
 /*
 Name: Emily Gomez
 Date created: 2/3/25
-Date last edited: 2/6/25
+Date last edited: 2/7/25
 Version: 1.1
 Description: JavaScript code for homework 1
 Additional Notes: I used w3schools to find how to do these two functions for hw1
