@@ -49,14 +49,14 @@
                         <td class="td1"><label for="pword">Password:</label> </td>
                         <td>
                             <input type="password" name="pword" id ="pword"
-                            minlength="8" required>
+                            minlength="8" maxlength="20" required>
                         </td>
                     </tr>
                     <tr>
                         <td class="td1"><label for="repword">Re-Enter Password:</label> </td>
                         <td>
                             <input type="password" name="repword" id ="repword"
-                            minlength="8" required>
+                            minlength="8" maxlength="20" required>
                         </td>
                     </tr>
                 </table>
@@ -84,24 +84,28 @@
                     <tr>
                         <td class="td1"><label for="phone">Phone Number:</label></td>
                         <td>
+                            <!--I got the code to to learn the pattern for the phone
+                            number and ssn from this website 
+                            "https://stackoverflow.com/questions/21650617/html-form-field-
+                            how-to-require-an-input-format"-->
                             <input type="text" name="phone" id="phone"
-                            required placeholder="123-456-7890"
-                            pattern="\d{3}-\d{3}-\d{4}" title="Format: 123-456-7890">
+                            maxlength="14" required placeholder="123-456-7890"
+                            pattern="^d{3}-d{3}-d{4}$" title="Format: 123-456-7890" >
                         </td>
                     </tr>
                     <tr>
                         <td class="td1"><label for="ssn">Social Security Number:</label></td>
                         <td>
                             <input type="password" name="ssn" id="ssn"
-                            required placeholder="###-##-####"
-                            pattern="\d{3}-\d{2}-\d{4}" title="Format: 123-45-6789">
+                            maxlength="11" required placeholder="###-##-####"
+                            pattern="^d{3}-^d{2}-^d{4}$" title="Format: 123-45-6789">
                         </td>
                     </tr>
                     <tr>
                         <td class="td1"><label for="email">Email:</label></td>
                         <td>
                             <input type="email" name="email" id="email"
-                            required placeholder="name@domain.com">
+                            maxlength="40" required placeholder="name@domain.com">
                         </td>
                     </tr>
                     <tr>
@@ -124,7 +128,7 @@
                             <!--I got this snippet from freeformatter.com-->
                             <input type="text" name="address2" id="city"
                             maxlength="30" required placeholder="Houston">
-                            <select> id="state" name="state"
+                            <select> id="state" name="state" 
                                 <option selected disabled>Please Select One</option>
                                 <option value="AL">Alabama</option>
                                 <option value="AK">Alaska</option>
@@ -262,7 +266,8 @@
                     <tr>
                         <td class="td1"><label for="notes">Optional Comments:</label></td>
                         <td>
-                            <textarea id="notes" name="notes" rows="3" cols="50" placeholder="Type any additional notes for the doctor here..."></textarea>
+                            <textarea id="notes" name="notes" rows="3" cols="50" 
+                            maxlength="50" placeholder="Type any additional notes for the doctor here..."></textarea>
                         </td>
                     </tr>
                     <tr>
